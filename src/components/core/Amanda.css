@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas:
+    "menu"
+    "chat"
+    "text";
+  height: 100%;
+}

@@ -1,0 +1,38 @@
+.text {
+  grid-area: text;
+  display: grid;
+  grid-template-columns: auto 60px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text send";
+  background-color: white;
+  border-top: 3px solid #c6ff00;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.text-msg {
+  grid-area: text;
+  border-width: 0;
+  overflow: hidden;
+  outline: none;
+  resize: none;
+  padding: 6px 12px;
+}
+.text-send {
+  grid-area: send;
+  background-color: #aad500;
+  border-radius: 50%;
+  border-width: 0;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 5px 10px rgba(80, 80, 80, 0.19),
+    0 3px 3px rgba(161, 161, 161, 0.23);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.text-send img {
+  width: 18px;
+}

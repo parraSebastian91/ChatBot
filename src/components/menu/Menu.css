@@ -1,0 +1,46 @@
+.menu {
+  background-color: #ffffff;
+  grid-area: menu;
+  display: grid;
+  grid-template-columns: 60px auto 60px 60px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "icon space menu close";
+  /* border-top: 3px solid #76d600; */
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 3px solid #c6ff00;
+}
+
+.menu-icon {
+  grid-area: icon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon img {
+  border-radius: 50%;
+  width: 50px;
+}
+.menu-space {
+  grid-area: space;
+  margin: 0;
+}
+.menu-menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-menu img {
+  width: 30px;
+}
+.menu-close {
+  grid-area: close;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-close img {
+  width: 30px;
+}
